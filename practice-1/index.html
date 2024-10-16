@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <button class="modal-button">Написать</button>
+    </main>
+    
+    <div class="modal-background">
+        <div class="modal">
+            <h2 class="modal__title">Стать партнёром проекта</h2>
+            <form action="" class="modal__form">
+                <div class="modal__input_file">
+                    <label for="logo" class="input-file">
+                        <input type="file" name="logo" id="logo" required>
+                        <span class="input-file__title required">Логотип (jpeg, png)</span>
+                        <div class="input-file__eclipse">
+                            <div class="input-file__eclipse_filter"></div>
+                            <img src="./assets/upload-symbol.svg" alt="upload">
+                            <span>Выберите файл</span>
+                        </div>
+                    </label>
+                    <div class="input-file__clear">
+                        <img src="./assets/cross.svg" alt="clear">
+                    </div>
+                </div>
+                <label for="org-name" class="modal__input modal__input_left">
+                    <span class="required">Название организации</span>
+                    <input type="text" name="org-name" id="org-name" required>
+                </label>
+                <label for="phone" class="modal__input modal__input_left">
+                    <span class="required">Телефон</span>
+                    <input type="tel" autocomplete="tel" name="phone" id="phone" required placeholder="+7 (933) 848-34-33">
+                </label>
+                <label for="email" class="modal__input modal__input_left">
+                    <span class="required">E-mail</span>
+                    <input type="email" name="email" id="email" required placeholder="avc@gmail.com">
+                </label>
+                <label for="direction" class="modal__input modal__input_icons">
+                    <span class="required">Направление</span>
+                    <select name="direction" id="direction" required>
+                        <option value="ecology">Экология</option>
+                        <option value="ecology2">Экология 2</option>
+                        <option value="ecology3">Экология 3</option>
+                    </select>
+                    <div class="input__icon">
+                        <img src="./assets/dropdown.svg" alt="dropdown">
+                    </div>
+                </label>
+                <label for="site" class="modal__input modal__input_icons modal__input_center">
+                    <input type="text" name="site" id="site" placeholder="avc.ru">
+                    <div class="input__icon">
+                        <img src="./assets/browser.svg" alt="site">
+                    </div>
+                </label>
+                <label for="vk" class="modal__input modal__input_icons modal__input_center">
+                    <input type="text" name="vk" id="vk" placeholder="vk.com/shans">
+                    <div class="input__icon">
+                        <img src="./assets/vk.svg" alt="vkontakte">
+                    </div>
+                </label>
+                <label for="ok" class="modal__input modal__input_icons modal__input_center">
+                    <input type="text" name="ok" id="ok" placeholder="ok.com/shans">
+                    <div class="input__icon">
+                        <img src="./assets/ok.svg" alt="odnoklasniki">
+                    </div>
+                </label>
+                <label for="fb" class="modal__input modal__input_icons modal__input_center">
+                    <input type="text" name="fb" id="fb" placeholder="facebook.com/shans">
+                    <div class="input__icon">
+                        <img src="./assets/facebook.svg" alt="facebook">
+                    </div>
+                </label>
+                <label for="ig" class="modal__input modal__input_icons modal__input_center">
+                    <input type="text" name="ig" id="ig" placeholder="instagram.com/shans">
+                    <div class="input__icon">
+                        <img src="./assets/instagram.svg" alt="instagram">
+                    </div>
+                </label>
+                <label for="yt" class="modal__input modal__input_icons modal__input_center">
+                    <input type="text" name="yt" id="yt" placeholder="youtube.com/shans">
+                    <div class="input__icon">
+                        <img src="./assets/youtube.svg" alt="youtube">
+                    </div>
+                </label>
+                <label for="manager" class="modal__input">
+                    <span>Руководитель</span>
+                    <input type="text" name="manager" id="manager" placeholder="Александр Иван Васильевич">
+                </label>
+                <input type="submit" value="Стать партнёром проекта" class="modal__submit-btn">
+            </form>
+            <button class="modal__close-btn">Отменить</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
